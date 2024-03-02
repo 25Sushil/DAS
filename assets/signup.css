@@ -55,6 +55,10 @@ body {
     font-size: 18px;
 }
 
+.input-group input:nth-child(5) input:nth-child(6) input:nth-child(7){
+    width: 50px;
+}
+
 button {
     display: flex;
     flex-wrap: wrap;

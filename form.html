@@ -18,69 +18,46 @@
     <div class="container">
         <h5>Make an Appointment</h5>
         <h1>Meet With Our Experts</h1>
-            <form action="#" method="post" onsubmit="return validateForm()">
-                <div class="input-group">
-                    <select id="department" required>
-                        <option value="department">Choose Department</option>
-                        <option value="general">General</option>
-                        <option value="pediatrics">Pediatrics</option>
-                        <option value="cardiology">Cardiology</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <select id="doctor" required>
-                        <option value="doctor">Select Doctor</option>
-                        <option value="d1">Dr. 1</option>
-                        <option value="d2">Dr. 2</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <input type="text" id="name" placeholder="Enter Your Name" required>
-                    <span id="err_name"></span>
-                </div>               
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Email Address" required>
-                    <span id="err_email"></span>
-                </div>               
-                <div class="input-group">
-                    <input type="tel" id="phone" placeholder="Phone" required>
-                    <span id="err_phone"></span>
-                </div>
-                <div class="input-group">
-                    <input type="date" id="date" placeholder="Date" required>
-                </div>
-                <div class="input-group">
-                    <input type="time" id="time" placeholder="Time" required>
-                </div>
-                <br>
-                <div>
-                    <button type="submit">Book Appointment Now</button>
-                </div>
-            </form>
-            
+        <form action="#" method="post">
+            <div class="input-group">
+                <select id="department" required>
+                    <option value="department">Choose Department</option>
+                    <option value="general">General</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="cardiology">Cardiology</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <select id="doctor" required>
+                    <option value="doctor">Select Doctor</option>
+                    <option value="d1">Dr. 1</option>
+                    <option value="d2">Dr. 2</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+                <span id="err_name"></span>
+            </div>               
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <span id="err_email"></span>
+            </div>               
+            <div class="input-group one-third">
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <span id="err_phone"></span>
+            </div>
+            <div class="input-group one-third">
+                <input type="date" id="date" placeholder="Date" required>
+            </div>
+            <div class="input-group one-third">
+                <input type="time" id="time" placeholder="Time" required>
+            </div>
+            <div class="form-footer">
+                <button type="submit">Book Appointment Now</button>
+            </div>
+        </form>  
     </div>
-    <script lang="">
-        function validateForm(){
-            let name = document.getElementById('name').value.trim();
-            let errname = document.getElementById('err_name');
-            let errusername = document.getElementById('err_username');
-
-            let namepattern = /[A-Z]([a-zA-Z\s])+/;
-            let error = 0;
-            if(name == ''){
-                errname.innerText = 'Enter name';
-                error++;
-            } else if(!namepattern.test(name)){
-                errname.innerText = 'Enter valid name character';
-                error++;
-            } else {
-                errname.innerText = "";
-            }
-
-            if(error > 0){
-                return false;
-            }
-        }
+    <script>
     </script>
 </body>
 </html>

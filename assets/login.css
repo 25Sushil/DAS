@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,14 +11,9 @@ body {
 }
 
 .hasbg {
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top center;
-}
-
-.bgfull-fixed {
-    background-attachment: scroll;
-    width: 100%;
 }
 
 .login-container {
@@ -49,7 +45,6 @@ body {
     color: white;
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
 .input-group input {

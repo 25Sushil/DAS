@@ -132,8 +132,10 @@ body{
     justify-content: center;
 }
 
-.description h1, p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+#about-us>.description h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    font-weight: 800;
 }
 
 #about-us img{
@@ -141,11 +143,25 @@ body{
     height: 400px;
 }
 
+#services{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .team{
     color: rgb(255, 255, 255);
     background-color: blue;
     text-align: center;
     justify-content: center;
+}
+
+.team>h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
 }
 
 .flip-container{

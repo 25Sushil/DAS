@@ -229,12 +229,13 @@ footer{
 
 .grid-box{
     display: grid;
-    grid-template-columns: 40% 40% auto;
-    gap: 10px;
+    grid-template-columns: 35% 35% 30%;
 }
 
 .box1, .box2, .box3{
+    display: inline-block;
     text-align: start;
+    margin: 10px;
 }
 
 .social-media ul{
@@ -252,10 +253,10 @@ footer{
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
-    background-color: gray;
-    border-radius: 45%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15%;
     padding: 10px;
-    transition: all 0.5s;
+    transition: all 0.55s;
 }
 
 .icon:hover{

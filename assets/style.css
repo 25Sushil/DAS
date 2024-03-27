@@ -145,9 +145,52 @@ body{
 
 #services{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+#services .description>h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#services .service-card{
+    height: 500px;
+    width: 1800px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+
+#services .service-card-inner{
+    margin: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+}
+
+#services .service-card::-webkit-scrollbar{
+    display: none;
+}
+
+#services .service-card{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#services .service-card-inner>img{
+    width: 60px; 
+    height: 60px;
+    margin-top: 10px;
 }
 
 .team{
